@@ -58,9 +58,11 @@
         <!-- loader js-->
         <script>
             var load = document.getElementById("load");
-                window.addEventListener('load', function() {
+            window.addEventListener('load', function() {
+                setTimeout(() => {
                     load.style.display = "none";
-                });
+                }, 3000);
+            });
         </script>
     </body>
 </html>

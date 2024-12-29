@@ -8,3 +8,9 @@ const carousel2 = new bootstrap.Carousel("#carouselExampleSlidesOnly", {
     ride: "carousel",
 });
 
+var load = document.getElementById("load");
+            window.addEventListener('load', function() {
+                setTimeout(() => {
+                    load.style.display = "none";
+                }, 3000);
+            });
