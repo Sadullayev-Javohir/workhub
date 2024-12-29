@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WorkHub Central Login</title>
+        <!-- google fonts link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!-- css link -->
+        <link rel="stylesheet" href="./style.css">
+        <!-- favicon link -->
+        <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+    </head>
+    <body>
+        <!-- load -->
+        <div id="load"></div>
+        <form action="#">
+            <div class="form-left">
+                <img src="../images/room8.jpg" title="form-left-img" alt="form-left-img">
+            </div>
+            <div class="form-right">
+                <div class="form-right-text">
+                    <h6>Qaytib kelganingizdan xursandmiz</h6>
+                    <h1>Hisobingizga kiring</h1>
+                </div>
+                <label for="email">
+                    <h5>Email</h5>
+                    <input name="email" type="email" required placeholder="John.snow@gmail.com">
+                </label>
+                <label for="password">
+                    <h5>Parol</h5>
+                    <input name="password" type="password" required placeholder="********">
+                </label>
+                <div class="form-right-flex">
+                    <div class="remember-me">
+                        <input type="radio" required title="Eslab qol">
+                        <h6>Eslab qol</h6>
+                    </div>
+                    <div class="forgot-pas">
+                        <h6 title="Parolni unutdingizmi?">Parolni unutdingizmi?</h6>
+                    </div>
+                </div>
+                <div class="form-button">
+                    <a type="submit" title="Hozir kirish">Hozir kirish</a>
+                    <a href="../signup/index.html" title="Ro'yxatdan o'tish">
+                        Ro'yxatdan o'tish
+                    </a>
+                </div>
+                <div class="dont-account">
+                    <a href="../home/index.html" title="Bosh sahifa">Bosh sahifa</a>
+                </div>
+            </div>
+        </form>
+
+        <!-- loader js-->
+        <script>
+            var load = document.getElementById("load");
+                window.addEventListener('load', function() {
+                    load.style.display = "none";
+                });
+        </script>
+    </body>
+</html>
