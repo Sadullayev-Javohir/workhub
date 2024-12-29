@@ -21,8 +21,6 @@
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="../images/favicon.png">
 
-    <!-- aos js -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -521,18 +519,14 @@
     <!-- loader js-->
      <script>
         var load = document.getElementById("load");
-            window.addEventListener('load', function() {
-                setTimeout(() => {
-                    load.style.display = "none";
-                }, 4000);
-            });
-     </script>
+        window.addEventListener('load', function() {
+            window.scrollTo(0, 0);
+            setTimeout(() => {
+                load.style.display = "none";
+            }, 4000);
+        });
 
-    <!-- <script>
-        AOS.init();
-    </script>
-    -->
-     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     </script>    
 </body>
 
 </html>
