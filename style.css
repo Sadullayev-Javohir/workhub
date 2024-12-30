@@ -441,12 +441,15 @@ header nav ul li a.entrance:hover {
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-20px);
     }
+
     75% {
         transform: translateY(-10px);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -583,7 +586,7 @@ header nav ul li a.entrance:hover {
 .slider3::before,
 .slider3::after {
     background: linear-gradient(to right, rgb(240, 255, 244) 0%, rgba(103, 174, 68, 0) 100%);
-    content: "";    
+    content: "";
     height: 100%;
     position: absolute;
     width: 35%;
@@ -689,7 +692,7 @@ header nav ul li a.entrance:hover {
     .services-right img {
         max-width: 400px;
     }
-    
+
     .services h1 {
         font-size: 30px;
     }
@@ -767,10 +770,11 @@ header nav ul li a.entrance:hover {
         width: 100%;
         text-align: center;
     }
+
     .benefits-left img {
         max-width: 400px;
     }
-    
+
     .benefits h1 {
         font-size: 30px;
     }
@@ -798,6 +802,7 @@ header nav ul li a.entrance:hover {
     .benefits p {
         font-size: 16px;
     }
+
     .services-left a,
     .benefits-right a {
         padding: 5px 12px;
@@ -834,7 +839,7 @@ header nav ul li a.entrance:hover {
     display: flex;
     align-items: start;
     justify-content: center;
-    
+
 }
 
 .column-half .subscribe-col {
@@ -846,10 +851,11 @@ header nav ul li a.entrance:hover {
     cursor: pointer;
     width: calc(100% / 3);
     filter: drop-shadow(1px 1px 1px #00AE6C);
-    
+
 }
 
-.subscribe-column .subscribe-col:hover, .subscribe-column .subscribe-col:focus {
+.subscribe-column .subscribe-col:hover,
+.subscribe-column .subscribe-col:focus {
     transform: scale(1.03);
     border-radius: 64% 36% 89% 11% / 1% 100% 0% 99%;
     background-color: #ECFEF7;
@@ -885,7 +891,7 @@ header nav ul li a.entrance:hover {
     border-radius: 5px;
     border: none;
     margin: 20px 0;
-    
+
 }
 
 .col-text .premium {
@@ -1055,15 +1061,17 @@ header nav ul li a.entrance:hover {
     .column-text h1 {
         font-size: 30px;
     }
+
     .column-text p {
         font-size: 16px;
     }
+
     .col-text h1 {
         font-style: normal;
         font-weight: 700;
         font-size: 25px;
         line-height: 162%;
-        
+
     }
 }
 
@@ -1174,7 +1182,7 @@ footer .container {
 .footer-col h2 {
     font-size: 25px;
     font-weight: 600;
-    color: #000D0C;    
+    color: #000D0C;
 }
 
 .footer-col ul {
@@ -1218,6 +1226,7 @@ footer .container {
     footer .container {
         padding: 20px;
     }
+
     .footer-column {
         flex-direction: column;
         align-items: start;
@@ -1227,15 +1236,19 @@ footer .container {
     .footer-col h1 {
         font-size: 25px;
     }
+
     .footer-col p {
         font-size: 14px;
     }
+
     .footer-col form {
         margin-top: 10px;
     }
+
     .footer-col form input {
         width: 100%;
     }
+
     .footer-col form button {
         width: 100%;
     }

@@ -6,6 +6,20 @@
     text-decoration: none;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #01BDAA;
+    border-radius: 50px;
+}
 
 #load {
     position: fixed;
@@ -39,7 +53,8 @@ form {
     flex-direction: row-reverse;
 }
 
-.form-left, .form-right {
+.form-left,
+.form-right {
     width: 50%;
 }
 
@@ -239,9 +254,11 @@ label input ::placeholder {
         display: block;
     }
 
-    .form-left, .form-right {
+    .form-left,
+    .form-right {
         width: 100%;
-    }   
+    }
+
     .form-right {
         margin-top: 30px;
     }
