@@ -118,6 +118,7 @@ label input {
     font-size: 14px;
     line-height: 16px;
     color: #2D3748;
+    display: flex;
 }
 
 label input ::placeholder {
@@ -133,6 +134,7 @@ label input ::placeholder {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 20px 0;
 }
 
 .remember-me {
@@ -171,7 +173,8 @@ label input ::placeholder {
     text-decoration: underline;
 }
 
-.form-button a {
+.form-button a,
+.form-button button {
     display: block;
     padding: 15px 30px;
     width: 100%;
@@ -182,7 +185,7 @@ label input ::placeholder {
     text-align: center;
 }
 
-.form-button a:nth-child(1) {
+.form-button button {
     background: #04C45C;
     border-radius: 5px;
     font-family: 'Roboto';
@@ -193,7 +196,7 @@ label input ::placeholder {
     color: #FFFFFF;
 }
 
-.form-button a:nth-child(1):hover {
+.form-button button:hover {
     background-color: #038a42;
 }
 
@@ -236,6 +239,141 @@ label input ::placeholder {
     cursor: pointer;
     transition: .5s;
 }
+
+label {
+    position: relative;
+}
+
+/* email invalid */
+
+label input[type="email"]:user-invalid {
+    background-color: rgb(255, 237, 237);
+    outline: 2px solid red;
+    -webkit-box-shadow: -1px 2px 17px -7px red;
+    -moz-box-shadow: -1px 2px 17px -7px red;
+    box-shadow: -1px 2px 17px -7px red;
+}
+
+label input[type="email"]:user-invalid + span::before {
+    content: "✖";
+    color: red;   
+    position: absolute;
+    top: 75%; 
+    transform: translate(-50%, -50%);
+    right: 0;
+    display: block;
+}
+
+
+label input[type="email"]:user-invalid + span::after {
+    content: "Iltimos email kiriting";
+    color: red;   
+    position: absolute;
+    font-weight: 500;
+    bottom: -40%;
+    transform: translate(-50%, -50%);
+    right: -13%;
+    display: block;
+}
+
+/* email valid */
+
+label input[type="email"]:user-valid {
+    background-color: rgb(199, 255, 202);
+    outline: 2px solid green;
+    -webkit-box-shadow: -1px 2px 17px -7px green;
+    -moz-box-shadow: -1px 2px 17px -7px green;
+    box-shadow: -1px 2px 17px -7px green;
+}
+
+label input[type="email"]:user-valid + span::before {
+    content: "✅";
+    color: green;   
+    position: absolute;
+    top: 75%; 
+    transform: translate(-50%, -50%);
+    right: 0;
+    display: block;
+}
+
+
+label input[type="email"]:user-valid + span::after {
+    content: "Email kiritildi";
+    color: green;   
+    position: absolute;
+    font-weight: 500;
+    bottom: -40%;
+    transform: translate(-50%, -50%);
+    right: -10%;
+    display: block;
+}
+
+
+/* password invalid */
+
+label input[type="password"]:user-invalid {
+    background-color: rgb(255, 237, 237);
+    outline: 2px solid red;
+    -webkit-box-shadow: -1px 2px 17px -7px red;
+    -moz-box-shadow: -1px 2px 17px -7px red;
+    box-shadow: -1px 2px 17px -7px red;
+}
+
+label input[type="password"]:user-invalid + span::before {
+    content: "✖";
+    color: red;   
+    position: absolute;
+    top: 74%; 
+    transform: translate(-50%, -50%);
+    right: 0;
+    display: block;
+}
+
+
+label input[type="password"]:user-invalid + span::after {
+    content: "Iltimos parol kiriting";
+    color: red;   
+    position: absolute;
+    font-weight: 500;
+    bottom: -40%;
+    transform: translate(-50%, -50%);
+    right: -13%;
+    display: block;
+}
+
+
+/* password valid */
+
+label input[type="password"]:user-valid {
+    background-color: rgb(199, 255, 202);
+    outline: 2px solid green;
+    -webkit-box-shadow: -1px 2px 17px -7px green;
+    -moz-box-shadow: -1px 2px 17px -7px green;
+    box-shadow: -1px 2px 17px -7px green;
+}
+
+label input[type="password"]:user-valid + span::before {
+    content: "✅";
+    color: green;   
+    position: absolute;
+    top: 75%; 
+    transform: translate(-50%, -50%);
+    right: 0;
+    display: block;
+}
+
+
+label input[type="password"]:user-valid + span::after {
+    content: "Parol kiritildi";
+    color: green;   
+    position: absolute;
+    font-weight: 500;
+    bottom: -40%;
+    transform: translate(-50%, -50%);
+    right: -10%;
+    display: block;
+}
+
 
 .dont-account a:nth-child(1):hover {
     text-decoration: underline;

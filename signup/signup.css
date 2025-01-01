@@ -172,7 +172,8 @@ label input ::placeholder {
     text-decoration: underline;
 }
 
-.form-button a {
+.form-button a,
+.form-button button {
     display: block;
     padding: 15px 30px;
     width: 100%;
@@ -183,7 +184,7 @@ label input ::placeholder {
     text-align: center;
 }
 
-.form-button a:nth-child(1) {
+.form-button button {
     background: #04C45C;
     border-radius: 5px;
     font-family: 'Roboto';
@@ -194,7 +195,7 @@ label input ::placeholder {
     color: #FFFFFF;
 }
 
-.form-button a:nth-child(1):hover {
+.form-button button:hover {
     background-color: #038a42;
 }
 
@@ -289,4 +290,276 @@ label input ::placeholder {
     .dont-account {
         flex-wrap: wrap;
     }
+}
+
+
+/* email invalid */
+
+label input[type="email"]:user-invalid {
+    background-color: rgb(255, 237, 237);
+    outline: 2px solid red;
+    -webkit-box-shadow: -1px 2px 17px -7px red;
+    -moz-box-shadow: -1px 2px 17px -7px red;
+    box-shadow: -1px 2px 17px -7px red;
+}
+
+label input[type="email"]:user-invalid + span::before {
+    content: "✖";
+    color: red;   
+    position: absolute;
+    top: 75%; 
+    transform: translate(-50%, -50%);
+    right: 0;
+    display: block;
+}
+
+
+label input[type="email"]:user-invalid + span::after {
+    content: "Iltimos email kiriting";
+    color: red;   
+    position: absolute;
+    font-weight: 500;
+    bottom: -40%;
+    transform: translate(-50%, -50%);
+    right: -13%;
+    display: block;
+}
+
+/* email valid */
+
+label {
+    position: relative;
+}
+
+input {
+    display: flex;
+}
+
+label input[type="email"]:user-valid {
+    background-color: rgb(199, 255, 202);
+    outline: 2px solid green;
+    -webkit-box-shadow: -1px 2px 17px -7px green;
+    -moz-box-shadow: -1px 2px 17px -7px green;
+    box-shadow: -1px 2px 17px -7px green;
+}
+
+label input[type="email"]:user-valid + span::before {
+    content: "✅";
+    color: green;   
+    position: absolute;
+    top: 75%; 
+    transform: translate(-50%, -50%);
+    right: 0;
+    display: block;
+}
+
+
+label input[type="email"]:user-valid + span::after {
+    content: "Email kiritildi";
+    color: green;   
+    position: absolute;
+    font-weight: 500;
+    bottom: -40%;
+    transform: translate(-50%, -50%);
+    right: -10%;
+    display: block;
+}
+
+
+
+/* password invalid */
+
+label input[type="password"]:user-invalid {
+    background-color: rgb(255, 237, 237);
+    outline: 2px solid red;
+    -webkit-box-shadow: -1px 2px 17px -7px red;
+    -moz-box-shadow: -1px 2px 17px -7px red;
+    box-shadow: -1px 2px 17px -7px red;
+}
+
+label input[type="password"]:user-invalid + span::before {
+    content: "✖";
+    color: red;   
+    position: absolute;
+    top: 74%; 
+    transform: translate(-50%, -50%);
+    right: 0;
+    display: block;
+}
+
+
+label input[type="password"]:user-invalid + span::after {
+    content: "Iltimos parol kiriting";
+    color: red;   
+    position: absolute;
+    font-weight: 500;
+    bottom: -40%;
+    transform: translate(-50%, -50%);
+    right: -13%;
+    display: block;
+}
+
+
+/* password valid */
+
+label input[type="password"]:user-valid {
+    background-color: rgb(199, 255, 202);
+    outline: 2px solid green;
+    -webkit-box-shadow: -1px 2px 17px -7px green;
+    -moz-box-shadow: -1px 2px 17px -7px green;
+    box-shadow: -1px 2px 17px -7px green;
+}
+
+label input[type="password"]:user-valid + span::before {
+    content: "✅";
+    color: green;   
+    position: absolute;
+    top: 75%; 
+    transform: translate(-50%, -50%);
+    right: 0;
+    display: block;
+}
+
+
+label input[type="password"]:user-valid + span::after {
+    content: "Parol kiritildi";
+    color: green;   
+    position: absolute;
+    font-weight: 500;
+    bottom: -40%;
+    transform: translate(-50%, -50%);
+    right: -10%;
+    display: block;
+}
+
+
+/* name invalid */
+
+label input[name="FirstName"]:user-invalid {
+    background-color: rgb(255, 237, 237);
+    outline: 2px solid red;
+    -webkit-box-shadow: -1px 2px 17px -7px red;
+    -moz-box-shadow: -1px 2px 17px -7px red;
+    box-shadow: -1px 2px 17px -7px red;
+}
+
+label input[name="FirstName"]:user-invalid + span::before {
+    content: "✖";
+    color: red;   
+    position: absolute;
+    top: 74%; 
+    transform: translate(-50%, -50%);
+    right: 0;
+    display: block;
+}
+
+
+label input[name="FirstName"]:user-invalid + span::after {
+    content: "Iltimos ism kiriting";
+    color: red;   
+    position: absolute;
+    font-weight: 500;
+    bottom: -40%;
+    transform: translate(-50%, -50%);
+    right: -13%;
+    display: block;
+}
+
+
+/* name valid */
+
+label input[name="FirstName"]:user-valid {
+    background-color: rgb(199, 255, 202);
+    outline: 2px solid green;
+    -webkit-box-shadow: -1px 2px 17px -7px green;
+    -moz-box-shadow: -1px 2px 17px -7px green;
+    box-shadow: -1px 2px 17px -7px green;
+}
+
+label input[name="FirstName"]:user-valid + span::before {
+    content: "✅";
+    color: green;   
+    position: absolute;
+    top: 75%; 
+    transform: translate(-50%, -50%);
+    right: 0;
+    display: block;
+}
+
+
+label input[name="FirstName"]:user-valid + span::after {
+    content: "Ism kiritildi";
+    color: green;   
+    position: absolute;
+    font-weight: 500;
+    bottom: -40%;
+    transform: translate(-50%, -50%);
+    right: -10%;
+    display: block;
+}
+
+
+/* lastname invalid */
+
+label input[name="LastName"]:user-invalid {
+    background-color: rgb(255, 237, 237);
+    outline: 2px solid red;
+    -webkit-box-shadow: -1px 2px 17px -7px red;
+    -moz-box-shadow: -1px 2px 17px -7px red;
+    box-shadow: -1px 2px 17px -7px red;
+}
+
+label input[name="LastName"]:user-invalid + span::before {
+    content: "✖";
+    color: red;   
+    position: absolute;
+    top: 74%; 
+    transform: translate(-50%, -50%);
+    right: 0;
+    display: block;
+}
+
+
+label input[name="LastName"]:user-invalid + span::after {
+    content: "Iltimos familya kiriting";
+    color: red;   
+    position: absolute;
+    font-weight: 500;
+    bottom: -40%;
+    transform: translate(-50%, -50%);
+    right: -13%;
+    display: block;
+}
+
+
+/* lastname valid */
+
+label input[name="LastName"]:user-valid {
+    background-color: rgb(199, 255, 202);
+    outline: 2px solid green;
+    -webkit-box-shadow: -1px 2px 17px -7px green;
+    -moz-box-shadow: -1px 2px 17px -7px green;
+    box-shadow: -1px 2px 17px -7px green;
+}
+
+label input[name="LastName"]:user-valid + span::before {
+    content: "✅";
+    color: green;   
+    position: absolute;
+    top: 75%; 
+    transform: translate(-50%, -50%);
+    right: 0;
+    display: block;
+}
+
+
+label input[name="LastName"]:user-valid + span::after {
+    content: "Familya kiritildi";
+    color: green;   
+    position: absolute;
+    font-weight: 500;
+    bottom: -40%;
+    transform: translate(-50%, -50%);
+    right: -10%;
+    display: block;
 }
