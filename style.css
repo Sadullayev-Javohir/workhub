@@ -4,6 +4,12 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+header.scrolled {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    
+}
+
 #load {
     position: fixed;
     top: 0;
@@ -50,13 +56,14 @@ body {
 
 /* HEADER */
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     line-height: 80px;
     z-index: 200;
     width: 100%;
     padding: 0 100px;
+
 }
 
 header nav {

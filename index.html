@@ -532,6 +532,21 @@
                 load.style.display = "none";
             }, 2000);
         });
+        
+
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header'); 
+            const scrollPosition = window.scrollY; 
+
+        
+        if (scrollPosition > window.innerHeight * 0.95) {
+            header.classList.add('scrolled'); 
+        } else {
+            header.classList.remove('scrolled');
+        }
+        });
+
+
 
     </script>
 </body>

@@ -50,11 +50,14 @@ body {
 
 /* HEADER */
 header {
+    position: fixed;
+    top: 0;
     line-height: 60px;
     z-index: 200;
     width: 100%;
     padding: 0 100px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
 }
 
 header nav {
@@ -156,12 +159,13 @@ header nav ul li a.entrance:hover {
         align-items: center;
         width: 100%;
         height: 100vh;
-        top: 0;
+        top: -10px;
         right: -100%;
         justify-content: center;
         position: fixed;
         background: rgba(0, 0, 0, 0.8);
         transition: 1s all ease-in-out;
+        z-index: 100;
     }
 
     #check:checked~ul {
@@ -170,7 +174,7 @@ header nav ul li a.entrance:hover {
 
     #menu {
         display: block;
-        z-index: 10;
+        z-index: 1000;
     }
 }
 
@@ -485,7 +489,7 @@ footer .container {
 .footer-col .logo a {
     font-size: 30px;
     font-weight: 900;
-    background: url(./images/green1.avif);
+    background: url(../images/green1.avif);
     background-size: cover;
     background-clip: text;
     color: transparent;
