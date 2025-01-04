@@ -186,7 +186,7 @@ label input ::placeholder {
 }
 
 .form-button button {
-    background: #04C45C;
+    background: #009d8e;
     border-radius: 5px;
     font-family: 'Roboto';
     font-style: normal;
@@ -197,7 +197,7 @@ label input ::placeholder {
 }
 
 .form-button button:hover {
-    background-color: #038a42;
+    background-color: #0a5c53;
 }
 
 .form-button a:nth-child(2) {
