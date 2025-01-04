@@ -4,6 +4,13 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+html, body {
+    overflow-x: hidden; /* Gorizontal skrollni butunlay o'chiradi */
+    margin: 0;
+    padding: 0;
+  }
+  
+
 #load {
     position: fixed;
     top: 0;
