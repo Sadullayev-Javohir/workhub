@@ -31,7 +31,7 @@ html, body {
     background: url(./images/loader.gif);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 400px;
+    background-size: 300px;
     z-index: 10000;
     backdrop-filter: blur(100px);
     background-color: rgba(255, 255, 255, 0.7);
@@ -411,14 +411,10 @@ header nav ul li a.entrance:hover {
     padding: 20px;
     border-radius: 20px;
     transition: 1s all;
-    filter: drop-shadow(1px 1px 5px #01BDAA);
-    cursor: pointer;
-
-}
-
-.idea-column .idea-col:hover {
     background-color: #ECFEF7;
 }
+
+
 
 .idea-col-top {
     display: flex;
@@ -450,27 +446,6 @@ header nav ul li a.entrance:hover {
     color: #FE7443;
 }
 
-.stars i {
-    animation: star 0.8s linear infinite;
-}
-
-@keyframes star {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-20px);
-    }
-
-    75% {
-        transform: translateY(-10px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
 
 .idea-col p {
     color: #2F2F2F;
@@ -867,16 +842,9 @@ header nav ul li a.entrance:hover {
     transition: 1s;
     cursor: pointer;
     width: calc(100% / 3);
-    filter: drop-shadow(1px 1px 1px #00AE6C);
-
-}
-
-.subscribe-column .subscribe-col:hover,
-.subscribe-column .subscribe-col:focus {
-    transform: scale(1.03);
-    border-radius: 64% 36% 89% 11% / 1% 100% 0% 99%;
     background-color: #ECFEF7;
 }
+
 
 .col-1:hover {
     border: 1px solid #410182;

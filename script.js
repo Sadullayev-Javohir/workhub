@@ -9,8 +9,6 @@ const carousel2 = new bootstrap.Carousel("#carouselExampleSlidesOnly", {
 });
 
 var load = document.getElementById("load");
-window.addEventListener('load', function () {
-    setTimeout(() => {
-        load.style.display = "none";
-    }, 2000);
+window.addEventListener('load', function () {    
+    load.style.display = "none";
 });
