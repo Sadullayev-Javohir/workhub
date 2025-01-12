@@ -210,7 +210,7 @@ header nav ul li a.entrance:hover {
     border: 1px solid #01BDAA;
     border-radius: 10px;
     background-color: transparent;
-    transition: 1s;
+    transition: 1s all !important;
     cursor: pointer;
     display: block;
     margin: 0 auto;

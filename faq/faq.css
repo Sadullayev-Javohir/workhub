@@ -240,6 +240,12 @@ header nav ul li a.entrance:hover {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    transition: 1s all !important;
+}
+
+.accordion ul li label:hover {
+    background: #01BDAA;
+    color: white;
 }
 
 .accordion ul li label span {
@@ -255,7 +261,7 @@ input[type="radio"] {
     margin: 20px 0;
     max-height: 0;
     overflow: hidden;
-    transition: 2s all ease-in-out;
+    transition: 1s all ease-in-out;
     background: #e0fffc;
     border-radius: 14px 18px;
 }
